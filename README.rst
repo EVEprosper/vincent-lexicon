@@ -1,10 +1,18 @@
+|Show Logo|
+
 vincent-lexicon
-==============================
+===============
+
+|Build Status| |Docs| 
 
 NLP sentiment analysis for corperate-speak
 
+|Vincent Adultman|
+
 Project Organization
-------------
+--------------------
+
+.. code-block:: 
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -54,4 +62,11 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">`cookiecutter data science project template`_</a>. #cookiecutterdatascience</small></p>
+
+
+.. |Show Logo| image:: http://dl.eveprosper.com/podcast/logo-colour-17_sm2.png
+    :target: http://eveprosper.com
+.. |Build Status| image:: https://travis-ci.org/EVEprosper/vincent-lexicon.svg?branch=master
+.. |Vincent Adultman| image:: http://i.huffpost.com/gen/2113984/thumbs/o-VINCENT-ADULTMAN-570.jpg?3
+.. _cookiecutter data science project template: https://drivendata.github.io/cookiecutter-data-science/
