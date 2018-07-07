@@ -18,7 +18,7 @@ def get_version(package_name):
         package_path (str): path to _version.py folder (abspath > relpath)
 
     Returns:
-        (str) __version__ value
+        str: __version__ value
 
     """
     module = package_name + '._version'
@@ -28,27 +28,6 @@ def get_version(package_name):
 
     return version
 
-def include_all_subfiles(*args):
-    """Slurps up all files in a directory (non recursive) for data_files section
-
-    Note:
-        Not recursive, only includes flat files
-
-    Returns:
-        (:obj:`list` :obj:`str`) list of all non-directories in a file
-
-    """
-    file_list = []
-    for path_included in args:
-        local_path = path.join(HERE, path_included)
-
-        for file in listdir(local_path):
-            file_abspath = path.join(local_path, file)
-            if path.isdir(file_abspath):    #do not include sub folders
-                continue
-            file_list.append(path_included + '/' + file)
-
-    return file_list
 
 class PyTest(TestCommand):
     """PyTest cmdclass hook for test-at-buildtime functionality
@@ -91,6 +70,8 @@ class TravisTest(PyTest):
             '--cov-report=term-missing',
             '--cov-config=.coveragerc',
         ]
+
+
 setup(
     name=__library_name__,
     version=get_version(__package_name__),
