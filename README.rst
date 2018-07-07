@@ -62,11 +62,14 @@ Project Organization
 
 --------
 
-Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">`cookiecutter data science project template`_</a>. #cookiecutterdatascience</small></p>
+Project based on the `cookiecutter data science project template`_
 
 
 .. |Show Logo| image:: http://dl.eveprosper.com/podcast/logo-colour-17_sm2.png
     :target: http://eveprosper.com
 .. |Build Status| image:: https://travis-ci.org/EVEprosper/vincent-lexicon.svg?branch=master
+.. |Docs| image:: https://readthedocs.org/projects/vincent-lexicon/badge/?version=latest
+    :target: http://vincent-lexicon.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 .. |Vincent Adultman| image:: http://i.huffpost.com/gen/2113984/thumbs/o-VINCENT-ADULTMAN-570.jpg?3
 .. _cookiecutter data science project template: https://drivendata.github.io/cookiecutter-data-science/
