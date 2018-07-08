@@ -1,12 +1,12 @@
 """wheel setup for Prosper common utilities"""
-from codecs import open
+import codecs
 import importlib
-from os import path, listdir
+import os
 
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
-HERE = path.abspath(path.dirname(__file__))
+HERE = os.path.abspath(os.path.dirname(__file__))
 
 __package_name__ = 'vincent'
 __library_name__ = 'vincent-lexicon'
@@ -15,7 +15,7 @@ def get_version(package_name):
     """find __version__ for making package
 
     Args:
-        package_path (str): path to _version.py folder (abspath > relpath)
+        package_name (str): path to _version.py folder (abspath > relpath)
 
     Returns:
         str: __version__ value
@@ -71,19 +71,23 @@ class TravisTest(PyTest):
             '--cov-config=.coveragerc',
         ]
 
+with codecs.open('README.rst', 'r', 'utf-8') as readme_fh:
+    README = readme_fh.read()
 
 setup(
     name=__library_name__,
     version=get_version(__package_name__),
     description='NLP sentiment analysis for corperate-speak',
+    long_description=README,
     author='John Purcell',
     author_email='jpurcell.ee@gmail.com',
-    url='https://github.com/EVEProsper/' + __package_name__,
+    url='https://github.com/EVEProsper/' + __library_name__,
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3.6',
     ],
     packages=find_packages(),
+    python_requires='>=3.6',
     include_package_data=True,
     package_data={
         '': ['LICENSE', 'README.rst'],
@@ -93,10 +97,13 @@ setup(
     entry_points={
         'console_scripts': [
             'GetNews=vincent_crons.GetNews:run_main',
-        ]
+        ],
     },
     install_requires=[
+        'nltk',
+        'pandas',
         'ProsperCommon',
+        'ProsperDatareader',
         'plumbum',
         'requests',
     ],

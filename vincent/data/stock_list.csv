@@ -1,0 +1,103 @@
+﻿ticker,company_name,index_group
+AAPL,Apple Inc.,S&P 100 Index
+ABBV,AbbVie Inc.,S&P 100 Index
+ABT,Abbott Laboratories,S&P 100 Index
+ACN,Accenture plc,S&P 100 Index
+AGN,Allergan plc,S&P 100 Index
+AIG,American International Group Inc.,S&P 100 Index
+ALL,Allstate Corp.,S&P 100 Index
+AMGN,Amgen Inc.,S&P 100 Index
+AMZN,Amazon.com,S&P 100 Index
+AXP,American Express Inc.,S&P 100 Index
+BA,Boeing Co.,S&P 100 Index
+BAC,Bank of America Corp,S&P 100 Index
+BIIB,Biogen,S&P 100 Index
+BK,The Bank of New York Mellon,S&P 100 Index
+BKNG,Booking Holdings,S&P 100 Index
+BLK,BlackRock Inc,S&P 100 Index
+BMY,Bristol-Myers Squibb,S&P 100 Index
+BRK.B,Berkshire Hathaway,S&P 100 Index
+C,Citigroup Inc,S&P 100 Index
+CAT,Caterpillar Inc,S&P 100 Index
+CELG,Celgene Corp,S&P 100 Index
+CHTR,Charter Communications,S&P 100 Index
+CL,Colgate-Palmolive Co.,S&P 100 Index
+CMCSA,Comcast Corporation,S&P 100 Index
+COF,Capital One Financial Corp.,S&P 100 Index
+COP,ConocoPhillips,S&P 100 Index
+COST,Costco,S&P 100 Index
+CSCO,Cisco Systems,S&P 100 Index
+CVS,CVS Health,S&P 100 Index
+CVX,Chevron Corporation,S&P 100 Index
+DHR,Danaher Corporation,S&P 100 Index
+DIS,The Walt Disney Company,S&P 100 Index
+DUK,Duke Energy,S&P 100 Index
+DWDP,DowDuPont,S&P 100 Index
+EMR,Emerson Electric Co.,S&P 100 Index
+EXC,Exelon,S&P 100 Index
+F,Ford Motor,S&P 100 Index
+FB,Facebook,S&P 100 Index
+FDX,FedEx,S&P 100 Index
+FOX,21st Century Fox,S&P 100 Index
+FOXA,21st Century Fox,S&P 100 Index
+GD,General Dynamics,S&P 100 Index
+GE,General Electric Co.,S&P 100 Index
+GILD,Gilead Sciences,S&P 100 Index
+GM,General Motors,S&P 100 Index
+GOOG,Alphabet Inc,S&P 100 Index
+GOOGL,Alphabet Inc,S&P 100 Index
+GS,Goldman Sachs,S&P 100 Index
+HAL,Halliburton,S&P 100 Index
+HD,Home Depot,S&P 100 Index
+HON,Honeywell,S&P 100 Index
+IBM,International Business Machines,S&P 100 Index
+INTC,Intel Corporation,S&P 100 Index
+JNJ,Johnson & Johnson Inc,S&P 100 Index
+JPM,JP Morgan Chase & Co,S&P 100 Index
+KHC,Kraft Heinz,S&P 100 Index
+KMI,Kinder Morgan,S&P 100 Index
+KO,The Coca-Cola Company,S&P 100 Index
+LLY,Eli Lilly and Company,S&P 100 Index
+LMT,Lockheed Martin,S&P 100 Index
+LOW,Lowe's,S&P 100 Index
+MA,MasterCard Inc,S&P 100 Index
+MCD,McDonald's Corp,S&P 100 Index
+MDLZ,Mondelēz International,S&P 100 Index
+MDT,Medtronic Inc.,S&P 100 Index
+MET,Metlife Inc.,S&P 100 Index
+MMM,3M Company,S&P 100 Index
+MO,Altria Group,S&P 100 Index
+MRK,Merck & Co.,S&P 100 Index
+MS,Morgan Stanley,S&P 100 Index
+MSFT,Microsoft,S&P 100 Index
+NEE,NextEra Energy,S&P 100 Index
+NFLX,Netflix,S&P 100 Index
+NKE,Nike,S&P 100 Index
+NVDA,Nvidia Corporation,S&P 100 Index
+ORCL,Oracle Corporation,S&P 100 Index
+OXY,Occidental Petroleum Corp.,S&P 100 Index
+PEP,Pepsico Inc.,S&P 100 Index
+PFE,Pfizer Inc,S&P 100 Index
+PG,Procter & Gamble Co,S&P 100 Index
+PM,Phillip Morris International,S&P 100 Index
+PYPL,PayPal Holdings,S&P 100 Index
+QCOM,Qualcomm Inc.,S&P 100 Index
+RTN,Raytheon Company,S&P 100 Index
+SBUX,Starbucks Corporation,S&P 100 Index
+SLB,Schlumberger,S&P 100 Index
+SO,Southern Company,S&P 100 Index
+SPG,"Simon Property Group, Inc.",S&P 100 Index
+T,AT&T Inc,S&P 100 Index
+TGT,Target Corp.,S&P 100 Index
+TXN,Texas Instruments,S&P 100 Index
+UNH,UnitedHealth Group,S&P 100 Index
+UNP,Union Pacific Corporation,S&P 100 Index
+UPS,United Parcel Service,S&P 100 Index
+USB,US Bancorp,S&P 100 Index
+UTX,United Technologies,S&P 100 Index
+V,Visa Inc.,S&P 100 Index
+VZ,Verizon Communications,S&P 100 Index
+WBA,Walgreens Boots Alliance,S&P 100 Index
+WFC,Wells Fargo,S&P 100 Index
+WMT,Wal-Mart,S&P 100 Index
+XOM,Exxon Mobil Corp,S&P 100 Index
