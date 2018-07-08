@@ -1,0 +1,10 @@
+[report]
+    omit = 
+        vincent/_version.py
+        vincent/__init__.py
+        vincent_crons/__init__.py
+
+[paths]
+    source = 
+        vincent/
+        vincent_crons/

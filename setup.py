@@ -42,7 +42,8 @@ class PyTest(TestCommand):
         self.pytest_args = [
             'tests',
             '-rx',
-            '--cov=' + __library_name__,
+            '--cov=' + __package_name__,
+            '--cov=' + __package_name__ + '_crons',
             '--cov-report=term-missing',
             '--cov-config=.coveragerc',
         ]
@@ -66,7 +67,8 @@ class TravisTest(PyTest):
             'tests',
             '-rx',
             '--junitxml=junit.xml',
-            '--cov=' + __library_name__,
+            '--cov=' + __package_name__,
+            '--cov=' + __package_name__ + '_crons',
             '--cov-report=term-missing',
             '--cov-config=.coveragerc',
         ]
