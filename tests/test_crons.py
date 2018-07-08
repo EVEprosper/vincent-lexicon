@@ -1,5 +1,8 @@
 """test GetNews cli"""
+import copy
+import os
 
+import helpers
 from plumbum import local
 import pytest
 
@@ -16,3 +19,10 @@ class TestGetNews:
 
         result = self.cli('--version')
         assert result.strip() == f'{vincent_crons.GetNews.PROGNAME} {__version__}'
+
+    def test_ticker_csv(self):
+        """validate --ticker-csv behavior"""
+        app = copy.deepcopy(self.dummy_app)
+        app.ticker_csv(os.path.join(helpers.ROOT, 'vincent', 'data', 'stock_list.csv'))
+
+        assert len(app.ticker_list.split(',')) == 102  #WTF?

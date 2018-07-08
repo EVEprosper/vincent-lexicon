@@ -38,9 +38,9 @@ class GetNewsCLI(p_cli.ProsperApplication):
         """launcher logic"""
         self.logger.info('hello world')
 
-def run_main():
+def run_main():  # pragma: no cover
     """entry point for launching app"""
     GetNewsCLI.run()
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     run_main()
