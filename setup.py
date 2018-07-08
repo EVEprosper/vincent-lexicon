@@ -35,10 +35,14 @@ class PyTest(TestCommand):
     http://doc.pytest.org/en/latest/goodpractices.html#manual-integration
 
     """
-    user_options = [('pytest-args=', 'a', 'Arguments to pass to pytest')]
+    user_options = [
+        ('pytest-args=', 'a', 'Arguments to pass to pytest'),
+        ('secret-cfg=', None, 'Secret credentials.ini file to apply to app.cfg'),
+    ]
 
     def initialize_options(self):
         TestCommand.initialize_options(self)
+        self.secret_cfg = None
         self.pytest_args = [
             'tests',
             '-rx',
@@ -52,8 +56,10 @@ class PyTest(TestCommand):
         import shlex
         import pytest
         pytest_commands = []
+        if self.secret_cfg:
+            pytest_commands.append('--secret-cfg=' + self.secret_cfg)
         try:
-            pytest_commands = shlex.split(self.pytest_args)
+            pytest_commands.extend(shlex.split(self.pytest_args))
         except AttributeError:
             pytest_commands = self.pytest_args
         errno = pytest.main(pytest_commands)
@@ -63,6 +69,7 @@ class TravisTest(PyTest):
     """wrapper for quick-testing for devs"""
     def initialize_options(self):
         TestCommand.initialize_options(self)
+        self.secret_cfg = None
         self.pytest_args = [
             'tests',
             '-rx',
